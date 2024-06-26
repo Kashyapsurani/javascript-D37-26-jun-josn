@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // crate a json //
+
+        const obgject = {
+            "cumpny": 'rnw',
+            "Addres": 'Amreli',
+            "Cours": 'Fullstack',
+        }
+
+        Object.entries(obgject).forEach((key, value) => {
+            console.log(`
+        
+            ${key} : ${value}
+        
+            `
+            )
+        });
+
+        for (var [key, value] of Object.entries(obgject)) {
+            console.log(`
+        
+            ${key} : ${value}
+        
+            `)
+        }
+
+        // bject to josn // 
+
+        const obg = {
+            cumpny: 'rnw',
+            Addres: 'Amreli',
+            Cours: 'Fullstack',
+        }
+
+        const jpsn = JSON.stringify(obg)
+
+        console.log(jpsn)
+
+        // json to  obg //
+
+        const obgjec = `{
+                    "cumpny":- 'rnw',
+                    "Addres":- 'Amreli',
+                    "Cours":- 'Fullstack',
+                }`
+
+        const crateobg = JSON.parse(obgjec)
+
+        console.log(crateobg)
+
+    </script>
+</body>
+
+</html>
